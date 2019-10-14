@@ -1,0 +1,5 @@
+{
+  "ConnectionString": {
+    "UserConnectionString ": "server = (localdb)\\ITL-BDEKAR; Databse=UserDb; Integrated Security=true; MultipleActiveResultSets=true"
+  }
+}
