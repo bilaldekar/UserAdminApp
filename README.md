@@ -1,6 +1,6 @@
 # UserAdminApp
 User admin app: provides examples of web api (GET, POST, PUT) to manage user adminstration, 
-these web apis are called from UserAdminAppAngular
+these web apis are called from https://github.com/bilaldekar/UserAdminAppAngular
 
 ## Edit config.json
 change server in config.json file to your sql server name
