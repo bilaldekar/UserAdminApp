@@ -7,7 +7,7 @@ namespace UserAdmin.Data
     public interface IUserRepository
     {
         ICollection<User> GetAllUsers();
-        ICollection<User> GetActiveUsers();
+        ICollection<User> GetActiveUsers(bool state);
         
         User GetUserById(int id);
 

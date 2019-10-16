@@ -13238,11 +13238,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\work\\UserAdminApp\\UserAdmin\\UserAdmin\\UserAdmin.csproj",
+      "projectUniqueName": "C:\\work\\UserAdminApp\\UserAdminApp\\UserAdmin\\UserAdmin.csproj",
       "projectName": "UserAdmin",
-      "projectPath": "C:\\work\\UserAdminApp\\UserAdmin\\UserAdmin\\UserAdmin.csproj",
+      "projectPath": "C:\\work\\UserAdminApp\\UserAdminApp\\UserAdmin\\UserAdmin.csproj",
       "packagesPath": "C:\\Users\\bilal.dekar\\.nuget\\packages\\",
-      "outputPath": "C:\\work\\UserAdminApp\\UserAdmin\\UserAdmin\\obj\\",
+      "outputPath": "C:\\work\\UserAdminApp\\UserAdminApp\\UserAdmin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13307,10 +13307,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

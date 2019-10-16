@@ -32,11 +32,11 @@ namespace UserAdmin.Controllers
         [HttpGet]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
-        public ActionResult<ICollection<User>> GetActiveUsers()
+        public ActionResult<ICollection<User>> GetActiveUsers(bool state)
         {
             try
             {
-                return Ok(_mapper.Map<IEnumerable< User>, IEnumerable<UserViewModel>>(_repository.GetActiveUsers()));
+                return Ok(_mapper.Map<IEnumerable< User>, IEnumerable<UserViewModel>>(_repository.GetActiveUsers(state)));
             }
             catch (Exception e)
             {

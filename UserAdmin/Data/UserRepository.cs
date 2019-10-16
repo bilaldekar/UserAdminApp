@@ -27,10 +27,10 @@ namespace UserAdmin.Data
 
         }
 
-        public ICollection<User> GetActiveUsers()
+        public ICollection<User> GetActiveUsers(bool state)
         {
             return _ctx.Users
-                .Where(u => u.Active == true)
+                .Where(u => u.Active == state)
                        .ToList();
 
         }
