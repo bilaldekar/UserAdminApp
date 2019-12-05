@@ -33,10 +33,11 @@ namespace UserAdmin
             services.AddTransient<UserSeeder>();
 
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IProfileRepository, ProfileRepository>();
 
             services.AddMvc()
-                .AddJsonOptions(opt=>opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore)
-                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+                .AddJsonOptions(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
+                //.SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddCors(options =>
             {

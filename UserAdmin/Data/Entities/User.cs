@@ -13,5 +13,6 @@ namespace UserAdmin.Data.Entities
         public string UserName { get; set; }
         public string Email { get; set; }
         public bool Active { get; set; }
+        public UserProfile Profile { get; set; }
     }
 }

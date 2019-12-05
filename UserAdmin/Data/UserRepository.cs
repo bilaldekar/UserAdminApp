@@ -24,12 +24,12 @@ namespace UserAdmin.Data
         {
             return _ctx.Users
                        .ToList();
-
         }
 
         public ICollection<User> GetActiveUsers(bool state)
         {
             return _ctx.Users
+                .Include(u => u.Profile)
                 .Where(u => u.Active == state)
                        .ToList();
 

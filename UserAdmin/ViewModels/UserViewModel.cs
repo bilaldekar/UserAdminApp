@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using UserAdmin.Data.Entities;
 
 namespace UserAdmin.ViewModels
 {
@@ -17,5 +18,6 @@ namespace UserAdmin.ViewModels
         public string UserUserName { get; set; }
         public string UserEmail { get; set; }
         public bool UserActive { get; set; }
+        public UserProfile UserProfile { get; set; }
     }
 }
