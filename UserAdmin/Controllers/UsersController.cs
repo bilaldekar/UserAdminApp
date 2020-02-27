@@ -29,14 +29,14 @@ namespace UserAdmin.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet]
+        [HttpGet("all/{active}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
-        public ActionResult<ICollection<User>> GetActiveUsers(bool state)
+        public ActionResult<ICollection<User>> GetActiveUsers(bool active)
         {
             try
             {
-                return Ok(_mapper.Map<IEnumerable< User>, IEnumerable<UserViewModel>>(_repository.GetActiveUsers(state)));
+                return Ok(_mapper.Map<IEnumerable< User>, IEnumerable<UserViewModel>>(_repository.GetActiveUsers(active)));
             }
             catch (Exception e)
             {
